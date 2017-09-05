@@ -62,10 +62,11 @@ MapWrapper.prototype.bounceMarker = function(){
 }
 
 MapWrapper.prototype.takeMeToButton = function() {
-  var container = document.getElementById('main-map');
-  this.googleMap = new google.maps.Map(container, {
-    center: {lat: 13.096010, lng: -59.617310},
-    zoom: 11
-  })
+  // var container = document.getElementById('main-map');
+  // this.googleMap = new google.maps.Map(container, {
+  //   center: {lat: 13.096010, lng: -59.617310},
+  //   zoom: 11
+  this.googleMap.setCenter({lat: 13.096010, lng: -59.617310})
+
   this.addMarker(this.googleMap.center);
 }
